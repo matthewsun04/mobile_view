@@ -1,0 +1,185 @@
+body {
+    background-color: beige;
+    color:black;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+p {
+    line-height: 125%;
+    font-family: monospace;
+}
+
+img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: navy;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+
+li {
+    display: block;
+    color:black;
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    border: 2px solid white;
+    background-color: navy;
+    position: relative;
+    overflow: hidden;
+        
+}
+
+nav a {
+    background-color: whitesmoke;
+    color: black;
+    padding: 7px;
+    position:sticky;
+    margin: 10px;
+    text-align: left;
+	font-size: 30px;
+    float: left;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    border: solid cyan;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+#skip {
+    text-transform: uppercase;
+}
+
+.thummbnail {
+    color: aliceblue;
+    /*filler */
+}
+
+#skip {
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus {
+    left: 20px;
+}
+
+#userhere {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.animation {
+    animation: pulse 1s linear infinite both;
+    width: 100%;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes dissolve {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+
+    #skipcontent {
+      display: none;
+    }
+
+    nav a {
+        float: none;
+        display: block;
+    }
+
+    .grid {
+        display: grid;
+        grid: 50px / auto;
+        grid-gap: 10px;
+        padding: 10px;
+        overflow:scroll;
+    }
+    img {
+        margin: auto;
+        max-width: 200px;
+    }
+
+    h2 {
+        margin: 20px;
+    }
+
+
+  }
+
+
+ 
+  @media (prefers-reduced-motion) {
+    .animation {
+     animation:none;
+    }
+     
+    .gif {
+        display:none;
+    }
+    
+  }
+
+
+
+
+
+/* gridcolumn start 1, end 1
+
+
